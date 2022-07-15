@@ -220,9 +220,9 @@
     },
     "duration": {
       "type": "string",
-      "pattern": "^[0-9]+(ns|us|ms|s|m|h)$",
+      "pattern": "^([0-9]+(ns|us|ms|s|m|h))+$",
       "examples": [
-        "1h"
+        "1h10m1s"
       ]
     },
     "tls_config": {
@@ -842,8 +842,7 @@
             },
             {
               "enum": [
-                "-1",
-                -1
+                "-1"
               ]
             }
           ]
